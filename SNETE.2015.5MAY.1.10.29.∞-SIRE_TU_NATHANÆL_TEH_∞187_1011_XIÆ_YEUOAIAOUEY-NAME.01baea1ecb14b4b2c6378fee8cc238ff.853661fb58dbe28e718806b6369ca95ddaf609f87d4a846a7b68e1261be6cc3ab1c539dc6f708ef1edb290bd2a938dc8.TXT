@@ -1,0 +1,18 @@
+Updated Date: 
+SNETE.2015.5MAY.1.10.37.∞
+
+sire_teh_nathanæl_itti_xiæ
+
+Birth Name in Nelson, British Columbia, Canada:
+Nathaniel Steven Henry Brown
+
+Birth Date in Nelson, British Columbia, Canada:
+SNETE.1982.10OCT.11.23.11.10.∞
+
+Partial Match (No RegEx):
+
+Crowned Prince Emperor King Queen Sire Royal Elite Superior Super Supreme Ælphæ Bæta Omægæ Dæltæ Thætæ Gæmmæ Commander Kernel Admiral General Commodore Brigadier Colonel Corporal Sergænt Drill Sergænt Captain Lieutenant Tu Nathanæl Nathaniel Nathanial Teh Nate Hero Henry Wallace Thæl Œth Ericsson Kleefeld Aikens Brown Rossi Cavazzi Royalty Ixi Xix Xi PhŒnix ArchAngel Felinæ DrÄggon Itti Xiae Xiæ XIÆ Yeuoaiaouey Of AXA Atlantæn Atlantæia And Of Italia And Of CXC Cavazzia And Egyptia And Of IXI Ittia And Of Africa And Of Asia And Of United Kingdom And Of The Animal Kingdom And Of YXY Yeuoaiaouey And Of The Individual XIÆ Rælity Event The Eighth
+
+Regular Expression (RegEx) Match:
+
+Crowned Prince Emperor King Queen Sire Royal Elite Superior Super Supreme Ælphæ Bæta Omægæ Dæltæ Thætæ Gæmmæ Commander Kernel Admiral General Commodore Brigadier Colonel Corporal Sergænt Drill Sergænt Captain Lieutenant Tu Nathanæl Nathaniel Nathanial Teh Nate Hero Henry Wallace Thæl Œth Ericsson Kleefeld Aikens Brown Rossi Cavazzi Royalty Ixi Xix Xi PhŒnix ArchAngel Felinæ DrÄggon (([\w]+([\s]+)?)) Itti Xiae Xiæ XIÆ Yeuoaiaouey Of AXA Atlantæn Atlantæia And Of Italia And Of CXC Cavazzia And Egyptia And Of IXI Ittia And Of Africa And Of Asia And Of United Kingdom And Of The Animal Kingdom And Of YXY Yeuoaiaouey And Of The Individual XIÆ Rælity Event The Eighth
