@@ -202,3 +202,5 @@ Currency Matrix
 		~ accumulation of gain (garner)
 		~ acceleration (rate) of achievement
 		~ quit ratio gradient
+		~ trust
+		~ agenda.xo currency matrix score for an entity of choice
