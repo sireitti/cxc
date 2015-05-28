@@ -1,10 +1,8 @@
 #!/usr/bin/env ruby
 
-#!/usr/bin/env ruby
-
 require 'cgi'
 
-MD5_VERIFIED = "590d784b74dc3ee3596038c86a622928"
+MD5_VERIFIED = "8a05b943e1da745e77908d17e1265b2f"
 
 APPLICATION_FULL_PATH = $0
 
