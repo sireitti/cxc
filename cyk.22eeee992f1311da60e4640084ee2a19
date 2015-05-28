@@ -1,0 +1,96 @@
+#!/usr/bin/env ruby
+
+#!/usr/bin/env ruby
+
+require 'cgi'
+
+MD5_VERIFIED = "590d784b74dc3ee3596038c86a622928"
+
+APPLICATION_FULL_PATH = $0
+
+md5 = `md5 -q #{APPLICATION_FULL_PATH}`.chomp!
+
+APPLICATION_FULL_LS_LLRT = `ls -Llrt #{APPLICATION_FULL_PATH}`.chomp!
+
+HEADER = <<-EOH
+
+Author: Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
+Created: SNETE.2014.∞
+Application: CYK Syncronization
+
+    ∆ Running this command will syncronize I.I.A. with I.V.I. 
+    ∆ This is exclusively for Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
+
+APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}
+APPLICATION_FULL_LS_LRT = "#{APPLICATION_FULL_LS_LLRT}"
+
+EOH
+
+print HEADER
+
+HEADER_STRING = CGI.escape(HEADER)
+
+MD5_HEADER_STRING = `md5 -q -s "#{HEADER_STRING}"`.chomp!
+
+print "SECURITY ANALYSIS CHECK POINT: " + `md5 -s "#{HEADER_STRING}"` + "\n"
+
+if MD5_HEADER_STRING === MD5_VERIFIED
+	print "VERIFIED. This application has been validated.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+else
+	print "ILLEGAL. This application has not been verified as secure and this process execution has been marked as invalid.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+	print "☢ ☣ MD5 (MESSAGE-DIGEST FINGERPRINT CHECKSUM) CHECK DOES NOT PASS FINAL VERIFICATION! ☣ ☢\n\n"
+	print "APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}\n"
+	print `ls -lrt #{APPLICATION_FULL_PATH}`
+	exit
+end
+
+print "Syncronization has started: 0%...\n"
+`sleep 1`
+print "Syncronization is at 10%...\n"
+`sleep 1`
+print "Syncronization is at 20%...\n"
+`sleep 1`
+print "Syncronization is at 30%...\n"
+`sleep 1`
+print "Syncronization is at 40%...\n"
+`sleep 1`
+print "Syncronization is at 50%...\n"
+`sleep 1`
+print "Syncronization is at 60%...\n"
+`sleep 1`
+print "Syncronization is at 70%...\n"
+`sleep 1`
+print "Syncronization is at 80%...\n"
+`sleep 1`
+print "Syncronization is at 90%...\n"
+`sleep 1`
+print "Syncronization has reached 100%. Verification has been started!\n"
+print "Please wait until 'Syncronization has been confirmed. 10,000% Verified!' is displayed...\n\n"
+`sleep 1`
+print "Syncronization verification at 0%...\n"
+`sleep 10`
+print "Syncronization verification at 1,000%...\n"
+`sleep 10`
+print "Syncronization verification at 2,000%...\n"
+`sleep 10`
+print "Syncronization verification at 3,000%...\n"
+`sleep 10`
+print "Syncronization verification at 4,000%...\n"
+`sleep 10`
+print "Syncronization verification at 5,000%...\n"
+`sleep 10`
+print "Syncronization verification at 6,000%...\n"
+`sleep 10`
+print "Syncronization verification at 7,000%...\n"
+`sleep 10`
+print "Syncronization verification at 8,000%...\n"
+`sleep 10`
+print "Syncronization verification at 9,000%...\n"
+`sleep 10`
+print "Syncronization has been confirmed. 10,000% Verified!\n"
+
+exit
