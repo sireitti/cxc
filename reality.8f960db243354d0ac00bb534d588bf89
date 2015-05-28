@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+require 'cgi'
+
+MD5_VERIFIED = "623f1fbd5b797ab131488ca33d8ba259"
+
+APPLICATION_FULL_PATH = $0
+
+md5 = `md5 -q #{APPLICATION_FULL_PATH}`.chomp!
+
+APPLICATION_FULL_LS_LLRT = `ls -Llrt #{APPLICATION_FULL_PATH}`.chomp!
+
+HEADER = <<-EOH
+
+Author: Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
+Created: SNETE.2014.∞
+
+For $0.00, run "reality summary [idea here]"
+    ∆ where [idea here] is anything you can imagine
+
+APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}
+APPLICATION_FULL_LS_LRT = "#{APPLICATION_FULL_LS_LLRT}"
+
+DOCUMENT RESULT IS CONFIDENTIAL. It has been piped directly into the entire brain and existence of the user running this command.
+
+EOH
+
+print HEADER
+
+HEADER_STRING = CGI.escape(HEADER)
+
+MD5_HEADER_STRING = `md5 -q -s "#{HEADER_STRING}"`.chomp!
+
+print "SECURITY ANALYSIS CHECK POINT: " + `md5 -s "#{HEADER_STRING}"` + "\n"
+
+if MD5_HEADER_STRING === MD5_VERIFIED
+	print "VERIFIED. This application has been validated.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+else
+	print "ILLEGAL. This application has not been verified as secure and this process execution has been marked as invalid.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+	print "☢ ☣ MD5 (MESSAGE-DIGEST FINGERPRINT CHECKSUM) CHECK DOES NOT PASS FINAL VERIFICATION! ☣ ☢\n\n"
+	print "APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}\n"
+	print `ls -lrt #{APPLICATION_FULL_PATH}`
+	exit
+end
+
+print "\n\n"
+
+print "Topic of choice was.... '#{ARGV.join(" ")}'"
+
+print "\n\n"
