@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+
+require 'cgi'
+
+MD5_VERIFIED = "5b67601d0a7ce34d02319b3dbc90f08a"
+
+APPLICATION_FULL_PATH = $0
+
+md5 = `md5 -q #{APPLICATION_FULL_PATH}`.chomp!
+
+APPLICATION_FULL_LS_LLRT = `ls -Llrt #{APPLICATION_FULL_PATH}`.chomp!
+
+DATE_FORMAT = 'SNETE.%Y.%-m%^b.%e.%-k.%-M.%S'
+
+HEADER = <<-EOH
+
+Author: Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
+Created: SNETE.2015.5MAY.28.23.10.22.∞
+Application: XTIME w/ SNETE, SNET, ACDT format
+
+    ∆ This application is exclusive for Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
+    ∆ Default date format is: #{DATE_FORMAT}
+
+APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}
+APPLICATION_FULL_LS_LLRT = "#{APPLICATION_FULL_LS_LLRT}"
+
+EOH
+
+print HEADER
+
+HEADER_STRING = CGI.escape(HEADER)
+
+MD5_HEADER_STRING = `md5 -q -s "#{HEADER_STRING}"`.chomp!
+
+print "SECURITY ANALYSIS CHECK POINT: " + `md5 -s "#{HEADER_STRING}"` + "\n"
+
+if MD5_HEADER_STRING === MD5_VERIFIED
+	print "VERIFIED. This application has been validated.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+else
+	print "ILLEGAL. This application has not been verified as secure and this process execution has been marked as invalid.\n"
+	print "    ∞ STATIC INTERNAL MD5 APPLICATION HEADER FINGERPRINT CHECKSUM: #{MD5_VERIFIED}\n"
+	print "    ∞ LIVE MD5 APPLICATION FINGERPRINT CHECKSUM: #{md5}\n"
+	print "☢ ☣ MD5 (MESSAGE-DIGEST FINGERPRINT CHECKSUM) CHECK DOES NOT PASS FINAL VERIFICATION! ☣ ☢\n\n"
+	print "APPLICATION_FULL_PATH = #{APPLICATION_FULL_PATH}\n"
+	print `ls -lrt #{APPLICATION_FULL_PATH}`
+	exit
+end
+
+print "\n\n\n"
+
+print "The current moment down to the SECOND is:\n\n"
+print Time.now.strftime(DATE_FORMAT) + ".∞\n"
+
+print "\n\n"
