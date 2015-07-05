@@ -2,7 +2,7 @@
 
 require 'cgi'
 
-MD5_VERIFIED = "235818825a3a8a4a3e6b79d0e4c98bfb"
+MD5_VERIFIED = "28edaa1689e3ddf7f53c299441c0579e"
 
 APPLICATION_FULL_PATH = $0
 
@@ -11,6 +11,9 @@ md5 = `md5 -q #{APPLICATION_FULL_PATH}`.chomp!
 APPLICATION_FULL_LS_LLRT = `ls -Llrt #{APPLICATION_FULL_PATH}`.chomp!
 
 HEADER = <<-EOH
+
+∆ Encrpyted by ®© Infinæ†∞  by Nathaniel 1011 Henry Brown
+	®© Sub Recursive Infinite Exponential Encryption  by Nathaniel 1011 Henry Brown
 
 Author: Sire Tu Nathanæl Nathaniel Teh 1011 Thare Henry Brown Cavazzi Xia Itti Xiæ Yeuoaiaouey
 Created: SNETE.2014.∞

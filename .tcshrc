@@ -1,0 +1,23 @@
+# System-wide .profile for sh(1)
+# alias ll="ls -al"
+
+#set PATH = (/Users/aegaeoe/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin)
+#set path = ($path /Users/aegaeoe/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin)
+# setenv PATH
+#setenv PATH $PATH:/usr/local/bin:/scripts/admin
+#setenv PATH $PATH:/Users/aegaeoe/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+#setenv PATH $PATH:/Users/aegaeoe/bin:/usr/local/bin:/usr/bin:/bin
+#setenv PATH $PATH:/usr/local/bin
+#set path = ($path /Users/aegaeoe/bin /usr/local/bin /usr/bin /bin)
+set path = ($path /usr/local/bin /usr/bin /bin /usr/sbin /sbin /Users/aegaeoe/bin)
+#set prompt = "SNETE.%Y.%-m%^b.%-d.%-k.%-M."
+
+#set prompt="\n%B%{\033[34m%}[%h] %d %D.%w.%Y %P\n%{\033[31m%}[%n][%m][%~]\n%{\033[30m%}%b"
+# Looks like: [$user][$host][`pwd`]
+## Precisely: [349] Thu 29.Jan.2004 23:00:20
+
+#set prompt="\n%B%{\033[34m%}[%h] SNETV.%Y.%W.%D.%P.∞ \n%{\033[31m%}[%n][%m][%~]\n%{\033[30m%}%b\n"
+set prompt="\n%{\033[35m%}[%n]%{\033[0m%}%{\033[36m%}[%m]%{\033[0m%}%B%{\033[34m%}%{\033[37m%}[%h]%{\033[0m%}%{\033[32m%}[SNETV.%Y.%W.%D.%P.∞]%{\033[0m%}%{\033[31m%}[%~]%b "
+#set prompt = "-- %w, %d %D %T %n %~ -- \n$ "
+
+#history -c
